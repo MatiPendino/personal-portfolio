@@ -9,7 +9,7 @@ export default function Home () {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       buttonRef.current.click();
-    }, 10000);
+    }, 1000);
 
     return () => {
       clearTimeout(timeoutId);
