@@ -26,8 +26,8 @@ const nunito = Nunito({
 })
 
 export const metadata = {
-  title: 'Matías Pendino - Portfolio',
-  description: 'Portfolio created using Next.JS 13'
+  title: 'Matias Pendino - Portfolio',
+  description: 'Matias Pendino Portfolio'
 }
 
 export default function RootLayout ({ children, params: {lng} }) {

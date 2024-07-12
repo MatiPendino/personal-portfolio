@@ -1,9 +1,9 @@
 'use client'
 import AOS from 'aos'
 import { useEffect } from 'react'
-import { useTranslation } from '../app/i18n/client'
+import { useTranslation } from '../../app/i18n/client'
 
-export function Skill ({ languageName, languageLevel, languageIconPath, lng }) {
+export function SkillCard ({ languageName, languageLevel, languageIconPath, lng }) {
   const {t} = useTranslation(lng)
   useEffect(() => {
     import('aos/dist/aos.css')
