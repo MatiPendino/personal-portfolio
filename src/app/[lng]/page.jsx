@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../styles/globals.css'
 import { useTranslation } from '../i18n'
-import Image from 'next/image'
 import Experience from '../../components/experience/Experience'
 import Portfolio from '../../components/portfolio/Portfolio'
 import Skills from '../../components/skills/Skills'

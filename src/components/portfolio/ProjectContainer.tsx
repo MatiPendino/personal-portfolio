@@ -8,13 +8,6 @@ const ProjectContainer: React.FC<ProjectProps> = () => {
 
     return (
         <div className='portfolio__container row col-10 col-lg-10'>
-            <Project
-                imagePath='/img/ppc.png' 
-                projectId='ppc' 
-                projectName='PPC' 
-                technologies='Django, Django REST Framework, React, Next, Bootstrap, PostgreSQL' 
-                demoUrl='https://podiumpickemchallenge.com' 
-            />
             <Project 
                 imagePath='/img/cocinasalud.png' 
                 projectId='cocinasalud' 
@@ -22,6 +15,14 @@ const ProjectContainer: React.FC<ProjectProps> = () => {
                 technologies='HTML, CSS, Bootstrap, Django, JavaScript, MySQL' 
                 demoUrl='https://cocinasalud.net' 
                 repoUrl='https://github.com/MatiPendino/cocina-salud' 
+            />
+            <Project
+                imagePath='/img/image-reminder.png'
+                projectId='image-reminder'
+                projectName='Photo Reminder Alarm'
+                technologies='Django, Django REST Framework, React Native, PostgreSQL'
+                demoUrl='https://play.google.com/store/apps/details?id=com.matipendino2001.imagereminder'
+                repoUrl='https://github.com/MatiPendino/image-reminder-backend'
             />
             <Project 
                 imagePath='/img/bespoke.png' 
@@ -36,14 +37,6 @@ const ProjectContainer: React.FC<ProjectProps> = () => {
                 projectName='CMAccesorios' 
                 technologies='WordPress' 
                 demoUrl='https://cmaccesorios.com/' 
-            />
-            <Project 
-                imagePath='/img/votar-fms.png' 
-                projectId='fms' 
-                projectName='Votar FMS' 
-                technologies='Java, Android Studio, Firebase' 
-                demoUrl='https://play.google.com/store/apps/details?id=com.eddd.votarfms&hl=es_419' 
-                repoUrl='https://github.com/MatiPendino/VotarFMS' 
             />
         </div>
     )
