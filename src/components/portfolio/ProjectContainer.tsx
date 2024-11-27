@@ -24,6 +24,13 @@ const ProjectContainer: React.FC<ProjectProps> = () => {
                 demoUrl='https://play.google.com/store/apps/details?id=com.matipendino2001.imagereminder'
                 repoUrl='https://github.com/MatiPendino/image-reminder-backend'
             />
+            <Project
+                imagePath='/img/soccerpools.png'
+                projectId='soccer-pools'
+                projectName='SoccerPools'
+                technologies='Django, Django REST Framework, Docker, AWS, PostgreSQL, React Native'
+                repoUrl='https://github.com/MatiPendino/soccer-pools-api'
+            />
             <Project 
                 imagePath='/img/bespoke.png' 
                 projectId='bespoke' 
