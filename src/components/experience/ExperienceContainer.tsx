@@ -13,13 +13,13 @@ const ExperienceContainer: React.FC<ExperienceProps> = ({t}) => {
                 <div className='experience-flex-responsive-invert'>
                 <ul className='nav nav-pills' id='myTab' role='tablist'>
                     <ExperienceTab
-                        companyName="Podium Pick´em Challenge"
-                        companyId="ppc"
+                        companyName="Freelance"
+                        companyId="freelance"
                         isActive={true}
                     />
                     <ExperienceTab
-                        companyName="Freelance"
-                        companyId="freelance"
+                        companyName="Podium Pick´em Challenge"
+                        companyId="ppc"
                     />
                     <ExperienceTab
                         companyName="Muchticket"
@@ -36,17 +36,6 @@ const ExperienceContainer: React.FC<ExperienceProps> = ({t}) => {
             <div className='col-12 col-lg-7 aos-animate' data-aos='fade-right' data-aos-duration='800' data-aos-delay='200'>
                 <div className='tab-content' id='myTabContent'>
                     <ExperienceCard 
-                        experienceName={t('experience-ppc')}
-                        experienceDate={t('experience-ppc-date')}
-                        experienceItemsList={[
-                            t('experience-ppc-i1'),
-                            t('experience-ppc-i2'),
-                            t('experience-ppc-i3')
-                        ]}
-                        companyId="ppc"
-                        isActive={true}
-                    />
-                    <ExperienceCard 
                         experienceName={t('experience-freelance')}
                         experienceDate={t('experience-freelance-date')}
                         experienceItemsList={[
@@ -56,6 +45,17 @@ const ExperienceContainer: React.FC<ExperienceProps> = ({t}) => {
                             t('experience-freelance-i4')
                         ]}
                         companyId="freelance"
+                        isActive={true}
+                    />
+                    <ExperienceCard 
+                        experienceName={t('experience-ppc')}
+                        experienceDate={t('experience-ppc-date')}
+                        experienceItemsList={[
+                            t('experience-ppc-i1'),
+                            t('experience-ppc-i2'),
+                            t('experience-ppc-i3')
+                        ]}
+                        companyId="ppc"
                     />
                     <ExperienceCard 
                         experienceName={t('experience-muchticket')}
