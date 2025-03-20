@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import '../styles/globals.css'
+import { Analytics } from "@vercel/analytics/react"
 import { useTranslation } from '../i18n'
+import '../styles/globals.css'
 import Experience from '../../components/experience/Experience'
 import Portfolio from '../../components/portfolio/Portfolio'
 import Skills from '../../components/skills/Skills'
@@ -11,6 +12,7 @@ export default async function HomePage ({ params: {lng} }) {
   const {t} = await useTranslation(lng)
   return (
     <main>
+      <Analytics/>
       <Hero t={t} />
       <About t={t} />
       <Skills t={t} lng={lng} />
